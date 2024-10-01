@@ -44,7 +44,7 @@ const Yl = {
     disableRange: { type: Boolean, default: void 0 },
     disableStream: { type: Boolean, default: void 0 },
     disableAutoFetch: { type: Boolean, default: void 0 },
-    renderInteractiveForms: { type: Boolean, default: void 0 },
+    annotationMode: { default: void 0 },
     isUrl: { type: Boolean, default: void 0 },
     showProgress: { type: Boolean, default: !0 },
     progressColor: { default: "#87ceeb" },
@@ -71,7 +71,7 @@ const Yl = {
         disableRange: l.disableRange,
         disableStream: l.disableStream,
         disableAutoFetch: l.disableAutoFetch,
-        renderInteractiveForms: l.renderInteractiveForms,
+        annotationMode: l.annotationMode,
         cMapUrl: l.cMapUrl
       };
       if (l.src instanceof Uint8Array)
