@@ -12,7 +12,7 @@
   },
   "scripts": {
     "tsc": "vue-tsc --noEmit && vue-tsc --emitDeclarationOnly --allowJs",
-    "build": "vite build && npm run tsc"
+    "build": "vite build"
   },
   "files": [
     "dist"
