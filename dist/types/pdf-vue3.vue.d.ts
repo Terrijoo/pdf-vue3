@@ -1,191 +1,113 @@
 import type { PDFDocumentProxy } from "./index";
-declare const _default: __VLS_WithTemplateSlots<import("vue").DefineComponent<{
-    src: {
-        type: import("vue").PropType<string | Uint8Array>;
-        required: true;
-        default: undefined;
-    };
-    httpHeaders: {
-        type: import("vue").PropType<Record<string, any>>;
-        default: undefined;
-    };
-    withCredentials: {
-        type: import("vue").PropType<boolean>;
-        default: undefined;
-    };
-    password: {
-        type: import("vue").PropType<string>;
-        default: undefined;
-    };
-    useSystemFonts: {
-        type: import("vue").PropType<boolean>;
-        default: undefined;
-    };
-    stopAtErrors: {
-        type: import("vue").PropType<boolean>;
-        default: undefined;
-    };
-    disableFontFace: {
-        type: import("vue").PropType<boolean>;
-        default: undefined;
-    };
-    disableRange: {
-        type: import("vue").PropType<boolean>;
-        default: undefined;
-    };
-    disableStream: {
-        type: import("vue").PropType<boolean>;
-        default: undefined;
-    };
-    disableAutoFetch: {
-        type: import("vue").PropType<boolean>;
-        default: undefined;
-    };
-    annotationMode: {
-        type: import("vue").PropType<number>;
-        default: undefined;
-    };
-    isUrl: {
-        type: import("vue").PropType<boolean>;
-        default: undefined;
-    };
-    showProgress: {
-        type: import("vue").PropType<boolean>;
-        default: boolean;
-    };
-    progressColor: {
-        type: import("vue").PropType<string>;
-        default: string;
-    };
-    showPageTooltip: {
-        type: import("vue").PropType<boolean>;
-        default: boolean;
-    };
-    showBackToTopBtn: {
-        type: import("vue").PropType<boolean>;
-        default: boolean;
-    };
-    scrollThreshold: {
-        type: import("vue").PropType<number>;
-        default: number;
-    };
-    pdfWidth: {
-        type: import("vue").PropType<string>;
-        default: string;
-    };
-    rowGap: {
-        type: import("vue").PropType<number>;
-        default: number;
-    };
-    page: {
-        type: import("vue").PropType<number>;
-        default: number;
-    };
-    cMapUrl: {
-        type: import("vue").PropType<string>;
-        default: string;
-    };
-}, {
+declare const _default: __VLS_WithTemplateSlots<import("vue").DefineComponent<import("vue").ExtractPropTypes<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<{
+    /**
+     * pdf url | Uint8Array | BASE64
+     */
+    src: string | Uint8Array;
+    httpHeaders?: Record<string, any> | undefined;
+    withCredentials?: boolean | undefined;
+    password?: string | undefined;
+    useSystemFonts?: boolean | undefined;
+    stopAtErrors?: boolean | undefined;
+    disableFontFace?: boolean | undefined;
+    disableRange?: boolean | undefined;
+    disableStream?: boolean | undefined;
+    disableAutoFetch?: boolean | undefined;
+    annotationMode?: number | undefined;
+    isUrl?: boolean | undefined;
+    showProgress?: boolean | undefined;
+    progressColor?: string | undefined;
+    showPageTooltip?: boolean | undefined;
+    showBackToTopBtn?: boolean | undefined;
+    scrollThreshold?: number | undefined;
+    pdfWidth?: string | undefined;
+    rowGap?: number | undefined;
+    page?: number | undefined;
+    cMapUrl?: string | undefined;
+}>, {
+    src: undefined;
+    httpHeaders: undefined;
+    withCredentials: undefined;
+    password: undefined;
+    useSystemFonts: undefined;
+    stopAtErrors: undefined;
+    disableFontFace: undefined;
+    disableRange: undefined;
+    disableStream: undefined;
+    disableAutoFetch: undefined;
+    annotationMode: undefined;
+    isUrl: undefined;
+    showProgress: boolean;
+    progressColor: string;
+    showPageTooltip: boolean;
+    showBackToTopBtn: boolean;
+    scrollThreshold: number;
+    pdfWidth: string;
+    rowGap: number;
+    page: number;
+    cMapUrl: string;
+}>>, {
     reload: () => void;
-}, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {
+}, {}, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {
     onProgress: (loadRatio: number) => void;
     onComplete: () => void;
     onScroll: (scrollOffset: number) => void;
     onPageChange: (page: number) => void;
     onPdfInit: (pdf: PDFDocumentProxy) => void;
-}, string, import("vue").VNodeProps & import("vue").AllowedComponentProps & import("vue").ComponentCustomProps, Readonly<import("vue").ExtractPropTypes<{
-    src: {
-        type: import("vue").PropType<string | Uint8Array>;
-        required: true;
-        default: undefined;
-    };
-    httpHeaders: {
-        type: import("vue").PropType<Record<string, any>>;
-        default: undefined;
-    };
-    withCredentials: {
-        type: import("vue").PropType<boolean>;
-        default: undefined;
-    };
-    password: {
-        type: import("vue").PropType<string>;
-        default: undefined;
-    };
-    useSystemFonts: {
-        type: import("vue").PropType<boolean>;
-        default: undefined;
-    };
-    stopAtErrors: {
-        type: import("vue").PropType<boolean>;
-        default: undefined;
-    };
-    disableFontFace: {
-        type: import("vue").PropType<boolean>;
-        default: undefined;
-    };
-    disableRange: {
-        type: import("vue").PropType<boolean>;
-        default: undefined;
-    };
-    disableStream: {
-        type: import("vue").PropType<boolean>;
-        default: undefined;
-    };
-    disableAutoFetch: {
-        type: import("vue").PropType<boolean>;
-        default: undefined;
-    };
-    annotationMode: {
-        type: import("vue").PropType<number>;
-        default: undefined;
-    };
-    isUrl: {
-        type: import("vue").PropType<boolean>;
-        default: undefined;
-    };
-    showProgress: {
-        type: import("vue").PropType<boolean>;
-        default: boolean;
-    };
-    progressColor: {
-        type: import("vue").PropType<string>;
-        default: string;
-    };
-    showPageTooltip: {
-        type: import("vue").PropType<boolean>;
-        default: boolean;
-    };
-    showBackToTopBtn: {
-        type: import("vue").PropType<boolean>;
-        default: boolean;
-    };
-    scrollThreshold: {
-        type: import("vue").PropType<number>;
-        default: number;
-    };
-    pdfWidth: {
-        type: import("vue").PropType<string>;
-        default: string;
-    };
-    rowGap: {
-        type: import("vue").PropType<number>;
-        default: number;
-    };
-    page: {
-        type: import("vue").PropType<number>;
-        default: number;
-    };
-    cMapUrl: {
-        type: import("vue").PropType<string>;
-        default: string;
-    };
-}>> & {
+}, string, import("vue").PublicProps, Readonly<import("vue").ExtractPropTypes<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<{
+    /**
+     * pdf url | Uint8Array | BASE64
+     */
+    src: string | Uint8Array;
+    httpHeaders?: Record<string, any> | undefined;
+    withCredentials?: boolean | undefined;
+    password?: string | undefined;
+    useSystemFonts?: boolean | undefined;
+    stopAtErrors?: boolean | undefined;
+    disableFontFace?: boolean | undefined;
+    disableRange?: boolean | undefined;
+    disableStream?: boolean | undefined;
+    disableAutoFetch?: boolean | undefined;
+    annotationMode?: number | undefined;
+    isUrl?: boolean | undefined;
+    showProgress?: boolean | undefined;
+    progressColor?: string | undefined;
+    showPageTooltip?: boolean | undefined;
+    showBackToTopBtn?: boolean | undefined;
+    scrollThreshold?: number | undefined;
+    pdfWidth?: string | undefined;
+    rowGap?: number | undefined;
+    page?: number | undefined;
+    cMapUrl?: string | undefined;
+}>, {
+    src: undefined;
+    httpHeaders: undefined;
+    withCredentials: undefined;
+    password: undefined;
+    useSystemFonts: undefined;
+    stopAtErrors: undefined;
+    disableFontFace: undefined;
+    disableRange: undefined;
+    disableStream: undefined;
+    disableAutoFetch: undefined;
+    annotationMode: undefined;
+    isUrl: undefined;
+    showProgress: boolean;
+    progressColor: string;
+    showPageTooltip: boolean;
+    showBackToTopBtn: boolean;
+    scrollThreshold: number;
+    pdfWidth: string;
+    rowGap: number;
+    page: number;
+    cMapUrl: string;
+}>>> & Readonly<{
     onOnProgress?: ((loadRatio: number) => any) | undefined;
     onOnComplete?: (() => any) | undefined;
     onOnScroll?: ((scrollOffset: number) => any) | undefined;
     onOnPageChange?: ((page: number) => any) | undefined;
     onOnPdfInit?: ((pdf: PDFDocumentProxy) => any) | undefined;
-}, {
+}>, {
     src: string | Uint8Array;
     httpHeaders: Record<string, any>;
     withCredentials: boolean;
@@ -207,7 +129,18 @@ declare const _default: __VLS_WithTemplateSlots<import("vue").DefineComponent<{
     rowGap: number;
     page: number;
     cMapUrl: string;
-}, {}>, {
+}, {}, {}, {}, string, import("vue").ComponentProvideOptions, true, {}, any>, Readonly<{
+    progress?: ((props: {
+        loadRatio: number;
+    }) => any) | undefined;
+    pageTooltip?: ((props: {
+        currentPage: number;
+        totalPages: number;
+    }) => any) | undefined;
+    backToTopBtn?: ((props: {
+        scrollOffset: number;
+    }) => any) | undefined;
+}> & {
     progress?: ((props: {
         loadRatio: number;
     }) => any) | undefined;
@@ -220,6 +153,23 @@ declare const _default: __VLS_WithTemplateSlots<import("vue").DefineComponent<{
     }) => any) | undefined;
 }>;
 export default _default;
+type __VLS_NonUndefinedable<T> = T extends undefined ? never : T;
+type __VLS_TypePropsToRuntimeProps<T> = {
+    [K in keyof T]-?: {} extends Pick<T, K> ? {
+        type: import('vue').PropType<__VLS_NonUndefinedable<T[K]>>;
+    } : {
+        type: import('vue').PropType<T[K]>;
+        required: true;
+    };
+};
+type __VLS_WithDefaults<P, D> = {
+    [K in keyof Pick<P, keyof P>]: K extends keyof D ? __VLS_Prettify<P[K] & {
+        default: D[K];
+    }> : P[K];
+};
+type __VLS_Prettify<T> = {
+    [K in keyof T]: T[K];
+} & {};
 type __VLS_WithTemplateSlots<T, S> = T & {
     new (): {
         $slots: S;

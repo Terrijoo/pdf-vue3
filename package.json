@@ -35,10 +35,10 @@
     "viewer"
   ],
   "devDependencies": {
-    "@vitejs/plugin-vue": "4.2.3",
-    "pdfjs-dist": "3.7.107",
-    "vite": "4.3.9",
-    "vue": "3.3.4",
-    "vue-tsc": "1.8.0"
+    "@vitejs/plugin-vue": "5.1.4",
+    "pdfjs-dist": "4.6.82",
+    "vite": "5.4.8",
+    "vue": "3.5.10",
+    "vue-tsc": "1.8.27"
   }
 }
