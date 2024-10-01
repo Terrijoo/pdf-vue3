@@ -20,6 +20,7 @@ const props = withDefaults(
     disableRange?: boolean;
     disableStream?: boolean;
     disableAutoFetch?: boolean;
+    renderInteractiveForms?: boolean;
     // --custom--
     showProgress?: boolean;
     progressColor?: string;
@@ -42,6 +43,7 @@ const props = withDefaults(
     disableRange: undefined,
     disableStream: undefined,
     disableAutoFetch: undefined,
+    renderInteractiveForms: undefined,
     showProgress: true,
     progressColor: "#87ceeb",
     showPageTooltip: true,
@@ -87,6 +89,7 @@ interface Option extends Record<string, any> {
   disableRange?: boolean;
   disableStream?: boolean;
   disableAutoFetch?: boolean;
+  renderInteractiveForms?: boolean;
 }
 
 const loadRatio = ref(0);
@@ -102,6 +105,7 @@ const getDoc = () => {
     disableRange: props.disableRange,
     disableStream: props.disableStream,
     disableAutoFetch: props.disableAutoFetch,
+    renderInteractiveForms: props.renderInteractiveForms,
     cMapUrl: props.cMapUrl,
   };
   if (props.src instanceof Uint8Array) {

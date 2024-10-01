@@ -20,14 +20,14 @@
   "type": "module",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/hymhub/pdf-vue3.git"
+    "url": "git+https://github.com/Terrijoo/pdf-vue3.git"
   },
   "author": "hyminghan",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/hymhub/pdf-vue3/issues"
+    "url": "https://github.com/Terrijoo/pdf-vue3/issues"
   },
-  "homepage": "https://github.com/hymhub/pdf-vue3#readme",
+  "homepage": "https://github.com/Terrijoo/pdf-vue3#readme",
   "keywords": [
     "pdf-vue3",
     "pdf",
