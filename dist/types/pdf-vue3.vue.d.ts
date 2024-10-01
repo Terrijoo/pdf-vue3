@@ -45,6 +45,10 @@ declare const _default: __VLS_WithTemplateSlots<import("vue").DefineComponent<{
         type: import("vue").PropType<boolean>;
         default: undefined;
     };
+    isUrl: {
+        type: import("vue").PropType<boolean>;
+        default: undefined;
+    };
     showProgress: {
         type: import("vue").PropType<boolean>;
         default: boolean;
@@ -135,6 +139,10 @@ declare const _default: __VLS_WithTemplateSlots<import("vue").DefineComponent<{
         type: import("vue").PropType<boolean>;
         default: undefined;
     };
+    isUrl: {
+        type: import("vue").PropType<boolean>;
+        default: undefined;
+    };
     showProgress: {
         type: import("vue").PropType<boolean>;
         default: boolean;
@@ -189,6 +197,7 @@ declare const _default: __VLS_WithTemplateSlots<import("vue").DefineComponent<{
     disableStream: boolean;
     disableAutoFetch: boolean;
     renderInteractiveForms: boolean;
+    isUrl: boolean;
     showProgress: boolean;
     progressColor: string;
     showPageTooltip: boolean;

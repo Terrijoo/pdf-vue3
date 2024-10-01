@@ -21,6 +21,7 @@ const props = withDefaults(
     disableStream?: boolean;
     disableAutoFetch?: boolean;
     renderInteractiveForms?: boolean;
+    isUrl?: boolean;
     // --custom--
     showProgress?: boolean;
     progressColor?: string;
@@ -44,6 +45,7 @@ const props = withDefaults(
     disableStream: undefined,
     disableAutoFetch: undefined,
     renderInteractiveForms: undefined,
+    isUrl: undefined,
     showProgress: true,
     progressColor: "#87ceeb",
     showPageTooltip: true,
@@ -110,7 +112,7 @@ const getDoc = () => {
   };
   if (props.src instanceof Uint8Array) {
     option.data = props.src;
-  } else if (props.src.endsWith(".pdf")) {
+  } else if (props.src.endsWith(".pdf") || props.isUrl) {
     option.url = props.src;
   } else {
     const binaryData = atob(

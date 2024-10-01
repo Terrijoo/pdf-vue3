@@ -45,6 +45,7 @@ const Yl = {
     disableStream: { type: Boolean, default: void 0 },
     disableAutoFetch: { type: Boolean, default: void 0 },
     renderInteractiveForms: { type: Boolean, default: void 0 },
+    isUrl: { type: Boolean, default: void 0 },
     showProgress: { type: Boolean, default: !0 },
     progressColor: { default: "#87ceeb" },
     showPageTooltip: { type: Boolean, default: !0 },
@@ -75,7 +76,7 @@ const Yl = {
       };
       if (l.src instanceof Uint8Array)
         Z.data = l.src;
-      else if (l.src.endsWith(".pdf"))
+      else if (l.src.endsWith(".pdf") || l.isUrl)
         Z.url = l.src;
       else {
         const d = atob(
