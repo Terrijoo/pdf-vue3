@@ -271,7 +271,7 @@ onBeforeMount(async () => {
   GlobalWorkerOptions = pdfjs.GlobalWorkerOptions;
   getDocument = pdfjs.getDocument;
   const workerSrc = new URL(
-    "../node_modules/pdfjs-dist/legacy/build/pdf.worker.min.mjs",
+    "../node_modules/pdfjs-dist/legacy/build/pdf.worker.min.js",
     import.meta.url
   ).href;
   GlobalWorkerOptions.workerSrc = workerSrc;
