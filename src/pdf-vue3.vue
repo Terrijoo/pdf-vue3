@@ -267,8 +267,7 @@ const setWidth = () => {
 };
 const isAddEvent = ref(false);
 onBeforeMount(async () => {
-  //@ts-ignore
-  const pdfjs = (await import("pdfjs-dist/legacy/build/pdf.min.mjs")).default;
+  const pdfjs = (await import("pdfjs-dist/legacy/build/pdf.min.js")).default;
   GlobalWorkerOptions = pdfjs.GlobalWorkerOptions;
   getDocument = pdfjs.getDocument;
   const workerSrc = new URL(
